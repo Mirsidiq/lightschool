@@ -1,0 +1,29 @@
+.footer{
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    margin-top: 20px;
+    left: 0;
+    padding: 20px 0;
+    color: #fff;
+    background: rgba( 255, 255, 255, 0.25 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+z-index: 2;
+}
+.footer__inner{
+    display: flex;
+    gap: 40px;
+}
+.footer__category__title{
+    font-size: 20px;
+    color: #222;
+}
+.footer__item{
+    display: block;
+    text-decoration: none;
+    margin-top: 16px;
+    color: #222;
+    font-weight: 500;
+}
