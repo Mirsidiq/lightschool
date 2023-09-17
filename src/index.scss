@@ -15,11 +15,10 @@ body{
     font-family: 'Montserrat';
     width: 100%;
     min-height: 100vh;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(122,122,218,1) 0%, rgba(167,199,205,1) 0%);
+    background-color: #fff;
 }
 .container{
-    max-width: 1300px;
+    max-width: 1210px;
     width: 100%;
     padding: 0 10px;
     margin: 0 auto;
@@ -40,4 +39,10 @@ ul,li{
     color: #222;
     font-weight: 600;
     font-size: 20px;
+}
+
+@media only screen and (max-width:767px){
+    .container{
+        max-width: 740px;
+    }
 }
