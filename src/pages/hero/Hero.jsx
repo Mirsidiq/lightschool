@@ -13,11 +13,12 @@ export default function Hero() {
           </div>
           <div className="hero__right__box">
             <div className="hero__right__video__box">
-            <i className='hero__right__video__icon fa-solid fa-laptop'></i>
+            <i className='hero__right__video__icon fa-solid fa-laptop fa-bounce'></i>
                 <span className='hero__right__video__title'>Video darslar</span>
             </div>
             <div className="hero__right__user__box">
-            <i class="fa-solid fa-user hero__right__user__icon"></i>
+            {/* <i class="fa-solid fa-user fa-bounce"></i> */}
+            <i class="fa-solid fa-user fa-bounce hero__right__user__icon"></i>
                 <span className='hero__right__video__title'>Suhbatlar</span>
             </div>
             <img src={MainBg} alt="main bg" className='hero__right__box__img' />
