@@ -1,0 +1,130 @@
+.hero{
+    background-image: url('../../assets/images/left-circle.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.hero__inner{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items: center;
+}
+.hero__left__title{
+    color: #101828;
+font-size:50px;
+font-weight: 700;
+line-height: 82px;
+letter-spacing: -0.5px;
+text-transform: capitalize;
+}
+.hero__left__title-bright{
+    color: #7F56D9;
+}
+.hero__right__box{
+    position: relative;
+    background-color: #7F56D9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero__right__box__img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.hero__right__video__box{
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    width: 214px;
+    border-radius: 18px;
+    padding: 18px;
+    left: -30px;
+    top: 30%;
+    background-color: #fff;
+    font-size: 25px;
+    border: 1px solid #7F56D9;
+}
+.hero__right__video__icon,
+.hero__right__user__icon{
+    color: #7F56D9;
+}
+.hero__right__video__title{
+    width: 100px;
+    color: rgba($color: #101828, $alpha:.5);
+    font-weight: 600;
+    font-size:15px;
+    margin-left: 10px;
+}
+.hero__right__user__box{
+    position: absolute;
+    right: 0;
+    bottom:30px;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #7F56D9;
+    padding: 18px;
+    border-radius: 18px;
+    width: 164px;
+    background-color: #fff;
+}
+
+
+
+@media only screen and (max-width:1110px){
+    .hero__left__title{
+        font-size: 45px;
+        line-height: 60px;
+    }
+}
+@media only screen and (max-width:995px){
+    .hero{
+        background-position: top left;
+    }
+    .hero__inner{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero__left__box{
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+    }
+    .hero__right__box{
+        margin-top: 40px;
+    }
+    .hero__right__video__box{
+        left: -80px;
+    }
+}
+@media only screen and (max-width:700px){
+    .hero__right__video__box{
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .hero__right__user__box{
+        bottom: 0;
+        right: 50%;
+        transform: translate(50%);
+    }
+}
+@media only screen and (max-width:576px){
+    .hero__left__title{
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
+@media only screen and (max-width:400px){
+    .hero__right__video__box{
+        top: -30px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .hero__right__user__box{
+        bottom:-30px;
+        right: 50%;
+        transform: translate(50%);
+    }
+}
