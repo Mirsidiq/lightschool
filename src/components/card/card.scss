@@ -1,0 +1,60 @@
+.card{
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.card:hover{
+}
+.card__img{
+    width: 100%;
+    object-fit: cover;
+}
+.card__body{
+    margin-top: 20px;
+}
+.card__title{
+    font-weight: 700;
+    color: #101828;
+    font-size: 20px;
+    line-height: 32px;
+}
+.card__text{
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+    margin-top: 12px;
+}
+.card__footer{
+    margin-top: 20px;
+}
+.card__btn{
+    font-weight: 600;
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #7F56D9;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    color: #7F56D9;
+}
+.card__btn::after{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height:0;
+    left: 0;
+    bottom: 0;
+    background-color: #7F56D9;
+    transition: all .8s;
+    z-index: -1;
+}
+.card__btn:hover::after{
+    height: 180%;
+    border-radius: 50% 50% 0 0;
+}
+.card__btn:hover{
+    color: #fff;
+}
