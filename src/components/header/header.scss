@@ -156,6 +156,7 @@ z-index: 3;
         padding:50px 5px 5px 5px;
         transform: translateX(-100%);
         transition: all .3s;
+        border-right: 2px solid #fff;
     }
     .nav__list__active{
         transform: translateX(0);

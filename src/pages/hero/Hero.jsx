@@ -2,6 +2,7 @@ import React from 'react'
 import './hero.scss'
 import MainBg from "../../assets/images/hero-bg.png"
 import VideoIcon from "../../assets/images/video.svg"
+import { NavLink } from 'react-router-dom'
 export default function Hero() {
   return (
     <div>
@@ -25,6 +26,39 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      </section>
+      <section className="services">
+        <div className="container">
+          <h3 className="services__title">
+            Bizning xizmatlarimiz
+          </h3>
+          <div className="services__inner">
+              <div className="service__card">
+                <div className="service__card__header">
+                <span className='service__card__header__icon__wrapper'>
+                <i className='service__card__header__icon fa-solid fa-laptop fa-bounce'></i>
+                </span>
+                  <h4 className='service__card__title'>Online Darslar</h4>
+                </div>
+                <div className="service__card__body">
+                  <p className='service__card__text'>Darslarimiz zamonaviy metodikalar yordamida tuzilgan</p>
+                <NavLink className='service__card__more__btn'>Ko'proq <i class="fa-solid fa-chevron-right fa-beat service__card__more__btn-arrow"></i></NavLink>
+                </div>
+              </div>
+              <div className="service__card">
+                <div className="service__card__header">
+                <span className='service__card__header__icon__wrapper'>
+                <i className='service__card__header__icon fa-solid fa-gamepad fa-shake'></i>
+                </span>
+                  <h4 className='service__card__title'>O'yinlar</h4>
+                </div>
+                <div className="service__card__body">
+                  <p className='service__card__text'>Turli xildagi o'yinlar bilan vaqtingizni maroqli o'tkazasiz</p>
+                <NavLink className='service__card__more__btn'>Ko'proq <i class="fa-solid fa-chevron-right fa-beat service__card__more__btn-arrow"></i></NavLink>
+                </div>
+              </div>
+          </div>
+        </div>
       </section>
     </div>
   )
