@@ -6,30 +6,32 @@ export default function Footer() {
     <footer className='footer'>
         <div className="container">
            <div className="footer__inner">
+           <div className="footer__logo">
            <NavLink href="#" className="header__logo">
-                    <span className='header__logo__text'>L</span>ight<span className='header__logo__text'>S</span>chool
-                </NavLink>
+                    <span className='header__logo__img'></span>
+                    <span className='header__logo__img'></span>
+                    <span className='header__logo__text'>Light School</span>
+            </NavLink>
+            <p className='footer__logo__desc'>
+                Yuqori bilim ko'nikmasi talantlarni kashf etadi
+            </p>
+           </div>
+            <div className="footer__info">
             <div className="footer__category">
-                <h4 className='footer__category__title'>Darslar</h4>
+                <h4 className='footer__category__title'>Xizmatlar</h4>
                 <NavLink className="footer__item">
-                    Matematika
+                    O'yinlar
                 </NavLink>
                 <NavLink className="footer__item">
-                    Fizika
-                </NavLink>
-                <NavLink className="footer__item">
-                    Ingliz tili
+                    Darslar
                 </NavLink>
             </div>
             <div className="footer__category">
-                <h4 className='footer__category__title'>O'yinlar</h4>
+                <h4 className='footer__category__title'>Tashkilot</h4>
                 <NavLink className="footer__item">
-                    X Nolik
+                    Biz haqimizda
                 </NavLink>
-                <NavLink className="footer__item">
-                    Sonni top
-                </NavLink>
-            
+            </div>
             </div>
            </div>
         </div>
