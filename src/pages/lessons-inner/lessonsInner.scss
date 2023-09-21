@@ -36,7 +36,7 @@
     transform: translateY(-40%) scale(1.1);
 }
 .lessons-inner__item__title{
-    font-size: 30px;
+    font-size: 25px;
     line-height: 42px;
 }
 .lessons-inner__item__text,
@@ -52,4 +52,15 @@
 }
 .lessons-inner__item__btn:hover{
     color: rgba($color: #fff, $alpha: .7)
+}
+@media only screen and (max-width:767px){
+    .lessons-inner__wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen and (max-width:400px){
+    .lessons-inner__item__header{
+        width: 200px;
+        height: 200px;
+    }
 }
