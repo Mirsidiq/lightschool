@@ -1,9 +1,55 @@
-
+.lessons-inner__title{
+    margin-top: 20px;
+}
 .lessons-inner__wrapper{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    gap: 20px;
 }
 .lessons-inner__item{
     background-color:  #7F56D9;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 80px;
+}
+.lessons-inner__item__header{
+    width: 250px;
+    height: 250px;
+    transition: all .3s;
+}
+.lessons-inner__item__img{
+    width: 100%;
+}
+.lessons-inner__item:hover .lessons-inner__item__header{
+    transform: rotate(10deg) translateY(-50%) scale(1.2);
+}
+.lessons-inner__item__body{
+    margin-top: 20px;
+    transition: transform .3s;
+    transition-delay: .3s;
+}
+.lessons-inner__item:hover .lessons-inner__item__body{
+    transform: translateY(-40%) scale(1.1);
+}
+.lessons-inner__item__title{
+    font-size: 30px;
+    line-height: 42px;
+}
+.lessons-inner__item__text,
+.lessons-inner__item__btn{
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.lessons-inner__item__btn{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+.lessons-inner__item__btn:hover{
+    color: rgba($color: #fff, $alpha: .7)
 }
