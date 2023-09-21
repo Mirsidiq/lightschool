@@ -2,8 +2,11 @@ import React from 'react'
 import './lessonsInner.scss'
 import Video from "../../assets/images/video.png"
 import Books from "../../assets/images/book.png"
-import { NavLink } from 'react-router-dom'
+import { NavLink, useParams } from 'react-router-dom'
+
 export default function LessonsInner() {
+    let {id}=useParams()
+    console.log(id);
   return (
     <section className='lessons-inner'>
         <div className="container">
@@ -16,7 +19,7 @@ export default function LessonsInner() {
                     <div className="lessons-inner__item__body">
                         <h4 className='lessons-inner__item__title'>Video darslar</h4>
                         <p className='lessons-inner__item__text'>Bilimlaringizni video darslar orqali mustahkamlang</p>
-                        <NavLink className="lessons-inner__item__btn">Darsni boshlash</NavLink>
+                        <NavLink className="lessons-inner__item__btn" to={`/lessons/${id}/videos`}>Darsni boshlash</NavLink>
                     </div>
                 </div>
                 <div className="lessons-inner__item">
@@ -26,7 +29,7 @@ export default function LessonsInner() {
                     <div className="lessons-inner__item__body">
                         <h4 className='lessons-inner__item__title'>Qo'llanmalar</h4>
                         <p className='lessons-inner__item__text'>Olgan bilimlaringizni sinang</p>
-                        <NavLink className="lessons-inner__item__btn">Darsni boshlash</NavLink>
+                        <NavLink className="lessons-inner__item__btn" to={`/lessons/${id}/materials`}>Darsni boshlash</NavLink>
                     </div>
                 </div>
             </div>

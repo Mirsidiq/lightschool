@@ -3,7 +3,6 @@ import "./lessons.scss"
 import Card from '../../components/card/Card'
 import { useParams } from 'react-router-dom';
 export default function Lessons() {
-  let {id}=useParams()
     const popular =[
         {
           id:1,
