@@ -16,11 +16,13 @@ import { NavLink } from 'react-router-dom'
 import Button from '../../components/button/Button';
 export default function Hero() {
   const popular =[
-    {
+    { 
+      id:1,
       title:"Informatika",
       desc:"Informatika darslari yordamida texnika olamiga kiring"
     },
-    {
+    { 
+      id:2,
       title:"Matematika",
       desc:"Matematika bilimlar charxi"
     },
@@ -108,7 +110,7 @@ export default function Hero() {
           <div className="popular__inner">
            {
             popular.map(e=>(
-              <Card data={e} aos={{"data-aos":"zoom-in","data-aos-delay":"1400"}}/>
+              <Card data={e} link={`lessons`} aos={{"data-aos":"zoom-in","data-aos-delay":"1400"}}/>
             ))
            }
           </div>

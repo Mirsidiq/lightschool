@@ -1,0 +1,10 @@
+.lessons{
+    padding-bottom: 40px;
+}
+.lessons__card button{
+    transition: all .3s;
+}
+.lessons__card button:hover{
+    background-color: #7F56D9;  
+    border-style: outset;
+}

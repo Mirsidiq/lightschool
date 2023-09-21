@@ -29,15 +29,16 @@
     margin-top: 20px;
 }
 .card__btn{
+    width: 100%;
     font-weight: 600;
     position: relative;
-    width: 100%;
     border-radius: 10px;
     border: 1px solid #7F56D9;
     background-color: transparent;
     cursor: pointer;
     overflow: hidden;
     color: #7F56D9;
+    outline: none;
 }
 .card__btn::after{
     position: absolute;
@@ -49,12 +50,12 @@
     bottom: 0;
     background-color: #7F56D9;
     transition: all .8s;
-    z-index: -1;
+    z-index:-1;
+}
+.card__btn:hover{
+    color: #fff;
 }
 .card__btn:hover::after{
     height: 180%;
     border-radius: 50% 50% 0 0;
-}
-.card__btn:hover{
-    color: #fff;
 }

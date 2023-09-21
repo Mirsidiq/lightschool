@@ -65,14 +65,14 @@ z-index: 3;
     width: 0;
     height: 2px;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #7F56D9;
+}
+.nav__item:nth-child(2)::after{
+    display: none;
 }
 .nav__item:hover::after{
     width: 100%;
     transition: width .3s ease;
-}
-.nav__item:first-child::after{
-    display: none;
 }
 .nav__item +.nav__item{
     margin-left: 20px;
@@ -92,7 +92,7 @@ z-index: 3;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     z-index: 2;
     opacity: 0;
-    transition: opacity .3s;
+    transition: all .3s;
 }
 
 .nav__item:hover>.nav__inner__list{

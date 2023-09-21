@@ -9,7 +9,7 @@ export default function Header() {
     <header className='header'>
         <div className="container">
             <div className="nav">
-                <NavLink href="#" className="header__logo">
+                <NavLink to="/" className="header__logo">
                     <span className='header__logo__img'></span>
                     <span className='header__logo__img'></span>
                     <span className='header__logo__text'>Light School</span>
@@ -19,7 +19,7 @@ export default function Header() {
                 <li className={'nav__item'} onClick={()=>(setDropDown(!dropdown))} >
                         Kategoriyalar
                         <ul className={`nav__inner__list ${ dropdown ?'nav__inner__list__active':""}`}>
-                            <NavLink className="nav__item__inner">
+                            <NavLink className="nav__item__inner" to={"/lessons"}>
                                 Darslar
                             </NavLink>
                             <NavLink className="nav__item__inner">

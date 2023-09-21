@@ -1,0 +1,9 @@
+
+.lessons-inner__wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.lessons-inner__item{
+    background-color:  #7F56D9;
+    color: #fff;
+}
