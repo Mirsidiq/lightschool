@@ -40,18 +40,6 @@ export default function Hero() {
       <div className="container">
         <div className="hero__inner">
           <div className="hero__left__box">
-          {/* <TypeAnimation
-      sequence={[
-        // Same substring at the start will only be typed out once, initially
-        "Karyerangiz",
-        1000,
-        "Karyerangiz yo'lidagi bilimlaringizni yuqori darajaga olib chiqing",
-      ]}
-      wrapper="span"
-      className='hero__left__title'
-      speed={30}
-      repeat={Infinity}
-    /> */}
             <h1 className='hero__left__title'><span className='hero__left__title-bright'>Karyerangiz </span> yo'lidagi <span className='hero__left__title-bright' >bilimlaringizni</span> yuqori darajaga olib chiqing</h1>
           </div>
           <div className="hero__right__box">
@@ -60,7 +48,6 @@ export default function Hero() {
                 <span className='hero__right__video__title'>Video darslar</span>
             </div>
             <div className="hero__right__user__box">
-            {/* <i class="fa-solid fa-user fa-bounce"></i> */}
             <i className="fa-solid fa-user fa-bounce hero__right__user__icon"></i>
                 <span className='hero__right__video__title'>Suhbatlar</span>
             </div>
@@ -84,7 +71,7 @@ export default function Hero() {
                 </div>
                 <div className="service__card__body">
                   <p className='service__card__text'>Darslarimiz zamonaviy metodikalar yordamida tuzilgan</p>
-                <NavLink className='service__card__more__btn'>Ko'proq <i className="fa-solid fa-chevron-right fa-beat service__card__more__btn-arrow"></i></NavLink>
+                <NavLink to={'/lessons'} className='service__card__more__btn'>Ko'proq <i className="fa-solid fa-chevron-right fa-beat service__card__more__btn-arrow"></i></NavLink>
                 </div>
               </div>
               <div className="service__card" data-aos="flip-right" data-aos-delay="1400" data-aos-duration="700">

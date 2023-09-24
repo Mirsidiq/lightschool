@@ -24,7 +24,7 @@ export default function Card(props) {
            </p>
         </div>
         <div className="card__footer">
-          <Button className="card__btn" onClick={()=>navigate(`${props.data.id}`)}>Ko'proq</Button>
+          <Button className="card__btn" onClick={()=>navigate(props?.link ?`lessons/${props.data.id}`:`${props.data.id}`)}>Ko'proq</Button>
         </div>
     </article>
   )

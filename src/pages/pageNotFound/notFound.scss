@@ -1,0 +1,38 @@
+.error-container{
+    min-width: 100%;
+    min-height: 100vh;
+}
+.error__text{
+    font-size: 300px;
+    font-weight: 700;
+    color: #101828;
+    text-align: center;
+}
+.error__text-purple{
+    color:  #7F56D9;
+}
+.error__body{
+    text-align: center;
+}
+.error__title{
+    font-size: 30px;
+}
+.go-back{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+@media only screen and (max-width:767px){
+    .error__text{
+        font-size: 150px;
+    }
+    .error__title{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:400px){
+    .error__text{
+        font-size: 100px;
+    }
+}

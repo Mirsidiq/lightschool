@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactPlayer from 'react-player';
+import screenfull from 'screenfull';
 import "./videos.scss"
 import { NavLink, useParams } from 'react-router-dom';
+
 export default function Videos() {
     let {id}=useParams() 
     const src =
@@ -9,7 +11,7 @@ export default function Videos() {
     return (
        <section className='videos'>
         <div className="container">
-        <NavLink className="lessons__back back" to={`/lessons/${id}`}><i class="fa-solid fa-chevron-left fa-beat back__chevron"></i>Ortga</NavLink>
+        <NavLink className="lessons__back back" to={`/lessons/${id}`}><i className="fa-solid fa-chevron-left fa-beat back__chevron"></i>Ortga</NavLink>
             <div className="videos__inner">
                 <div className="video__card">
                     <div className="video__card__header">
