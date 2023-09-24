@@ -1,7 +1,7 @@
 import React from 'react'
 import "./lessons.scss"
 import Card from '../../components/card/Card'
-import { useParams } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 export default function Lessons() {
     const popular =[
         {
@@ -58,6 +58,7 @@ export default function Lessons() {
   return (
     <div className='lessons'>
         <div className="container">
+          <NavLink className="lessons__back back" to={'/'}><i class="fa-solid fa-chevron-left fa-beat back__chevron"></i>Ortga</NavLink>
         <h3 className="popular__title lessons__title">
             Barcha darslar
           </h3>

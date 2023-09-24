@@ -10,6 +10,7 @@ export default function LessonsInner() {
   return (
     <section className='lessons-inner'>
         <div className="container">
+        <NavLink className="lessons__back back" to={'/lessons'}><i class="fa-solid fa-chevron-left fa-beat back__chevron"></i>Ortga</NavLink>
                 <h2 className='lessons-inner__title popular__title'>Kerakli yo'nalishni tanlang</h2>
             <div className="lessons-inner__wrapper">
                 <div className="lessons-inner__item">
